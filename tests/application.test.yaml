@@ -1,0 +1,13 @@
+test_metadata:
+  type: config
+  name: code_deploy_application
+  description: test for creating an application
+
+applications:
+  - name: test
+    deployment_groups:
+      - name: testasg
+        deployment_config_name: CodeDeployDefault.AllAtOnce
+        autoScalingGroups:
+          - Ref: AutoscalingGroup
+        autoRollback: true

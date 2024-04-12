@@ -1,0 +1,10 @@
+#Example configuration
+
+#applications:
+#  - name: test
+#    deployment_groups:
+#      - name: testasg
+#        deployment_config_name: CodeDeployDefault.AllAtOnce
+#        autoScalingGroups:
+#          - Ref: testAutoscalingGroup
+#        autoRollback: true
